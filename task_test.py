@@ -1,5 +1,6 @@
 import math
 
+
 def zastroischik(N, M, X):
     uchastkov = math.ceil(N / M)
     summa = 0
@@ -11,7 +12,8 @@ def zastroischik(N, M, X):
         count_stay -= M
         summa += M * X
         X += 1000
-    print(summa)
+    return summa
 
 
-zastroischik(10, 3, 10000)
+result = zastroischik(10, 3, 10000)
+print(result)
